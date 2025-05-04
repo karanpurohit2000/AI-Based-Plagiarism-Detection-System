@@ -38,7 +38,7 @@ class FileProcessor:
         text = re.sub(r'[^\w\s-]', '', text)
         return re.sub(r'\s+', ' ', text).strip()
 
-    # Original processing methods below (unchanged)
+    # Processing methods 
     def _process_pdf(self, path: str) -> str:
         text = []
         with open(path, 'rb') as f:
