@@ -1,4 +1,4 @@
-# app.py (Updated with Button Navigation)
+# app.py 
 import streamlit as st
 import os
 import base64
@@ -15,7 +15,7 @@ from pathlib import Path
 project_root = Path(__file__).parent
 sys.path.append(str(project_root))
 
-# Custom CSS Injection (Keep the existing styles)
+# Custom CSS Injection 
 def inject_custom_css():
     st.markdown("""
     <style>
