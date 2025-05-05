@@ -127,7 +127,7 @@ class AIService:
                 if not entry.strip():
                     continue
 
-                # Basic validation without API call
+                
                 is_valid = bool(re.search(
                     r'(doi\.org|https?://|ISBN|\(\d{4}\))', 
                     entry, 
