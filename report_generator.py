@@ -5,7 +5,7 @@ import datetime
 class PDF(FPDF):
     def __init__(self):
         super().__init__()
-        # Add the regular DejaVuSans font (no bold)
+        # Add the regular DejaVuSans font 
         self.add_font('DejaVu', '', 'DejaVuSans.ttf', uni=True)
         
         # Get the current date and time for report generation
@@ -30,7 +30,7 @@ def generate_plagiarism_report(text, analysis, filename):
     pdf = PDF()
     pdf.add_page()
     
-    # Score Display (using regular font)
+    # Score Display 
     pdf.set_font('DejaVu', '', 16)  # Use regular font (not bold)
     pdf.cell(0, 10, f'Final Plagiarism Score: {analysis["plagiarism_score"]}%', 0, 1)
     pdf.ln(10)
